@@ -1,0 +1,14 @@
+[project]
+name = "transcript-intelligence"
+version = "0.1.0"
+description = "Transcript Category Identification and Analysis"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn>=0.30.0",
+    "pydantic>=2.0.0",
+    "langgraph>=0.2.0",
+    "langchain-core>=0.3.0",
+    "requests>=2.31.0"
+]

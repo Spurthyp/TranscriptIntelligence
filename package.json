@@ -1,0 +1,15 @@
+{
+  "name": "transcript-intelligence-root",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "frontend": "npm --prefix frontend run dev",
+    "server": "python3 -m uvicorn app:app --app-dir backend --port 8000 --reload",
+    "api": "python3 -m uvicorn app:app --app-dir backend --port 8000 --reload",
+    "backend": "python3 -m uvicorn app:app --app-dir backend --port 8000 --reload",
+    "pipeline": "python3 backend/pipeline.py",
+    "batch": "python3 backend/batch_processor.py",
+    "build": "npm --prefix frontend run build",
+    "preview": "npm --prefix frontend run preview"
+  }
+}

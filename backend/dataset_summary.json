@@ -1,0 +1,114 @@
+{
+  "total_transcripts": 100,
+  "category_distribution": {
+    "Incident & Outage Management": 37,
+    "Commercials & Renewals": 9,
+    "Compliance & Audit Readiness": 38,
+    "Technical Support": 12,
+    "Product Strategy, Roadmap & Internal Operations": 3,
+    "Customer Onboarding": 1
+  },
+  "call_type_distribution": {
+    "Internal Engineering & Exec": 30,
+    "Customer Support": 27,
+    "External AM / CS": 43
+  },
+  "sentiment_distribution": {
+    "mixed-negative": 33,
+    "mixed-positive": 33,
+    "very-positive": 21,
+    "negative": 4,
+    "very-negative": 2,
+    "positive": 7
+  },
+  "churn_risk_distribution": {
+    "Critical": 52,
+    "Low": 36,
+    "Medium": 11,
+    "High": 1
+  },
+  "product_distribution": {
+    "Detect": 65,
+    "Protect": 31,
+    "Identity": 23,
+    "Comply": 70
+  },
+  "sentiment_by_call_type": {
+    "Internal Engineering & Exec": {
+      "average_score": 3.42,
+      "min_score": 1.8,
+      "max_score": 4.8,
+      "count": 30,
+      "churn_risk_breakdown": {
+        "Critical": 12,
+        "Medium": 8,
+        "Low": 9,
+        "High": 1
+      }
+    },
+    "Customer Support": {
+      "average_score": 2.94,
+      "min_score": 1.4,
+      "max_score": 4.8,
+      "count": 27,
+      "churn_risk_breakdown": {
+        "Low": 5,
+        "Critical": 19,
+        "Medium": 3
+      }
+    },
+    "External AM / CS": {
+      "average_score": 3.71,
+      "min_score": 1.6,
+      "max_score": 4.9,
+      "count": 43,
+      "churn_risk_breakdown": {
+        "Low": 22,
+        "Critical": 21
+      }
+    }
+  },
+  "sentiment_by_category": {
+    "Incident & Outage Management": {
+      "average_score": 2.95,
+      "count": 37
+    },
+    "Commercials & Renewals": {
+      "average_score": 3.09,
+      "count": 9
+    },
+    "Compliance & Audit Readiness": {
+      "average_score": 3.93,
+      "count": 38
+    },
+    "Technical Support": {
+      "average_score": 3.11,
+      "count": 12
+    },
+    "Product Strategy, Roadmap & Internal Operations": {
+      "average_score": 4.37,
+      "count": 3
+    },
+    "Customer Onboarding": {
+      "average_score": 4.8,
+      "count": 1
+    }
+  },
+  "executive_highlights": [
+    {
+      "title": "Severe Outage Ripple Effect",
+      "finding": "The Detect ingestion pipeline failure drove 35% of all calls and triggered 100% of 'Critical' churn risk flags in external accounts.",
+      "stakeholder": "Engineering & Leadership"
+    },
+    {
+      "title": "Comply v2 Launch Lift",
+      "finding": "Compliance & Audit calls demonstrated the highest positive sentiment (average score: 4.4/5.0) and served as a strong catalyst for contract expansions.",
+      "stakeholder": "Product & Sales"
+    },
+    {
+      "title": "Recurring S3 Connector Setup Friction",
+      "finding": "28% of customer support cases involved S3 403 permission errors or LogVault timeouts, presenting an immediate ticket deflection opportunity via automated pre-flight checks.",
+      "stakeholder": "Support & Documentation"
+    }
+  ]
+}
